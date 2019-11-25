@@ -1,22 +1,16 @@
 <template>
   <div class="wrapper">
-    这是主页
+    主页文件
   </div>
 </template>
 
 <script>
 export default {
-  components:{},
-  props:{},
-  data(){
+  name: '',
+  data () {
     return {
     }
-  },
-  watch:{},
-  computed:{},
-  methods:{},
-  created(){},
-  mounted(){}
+  }
 }
 </script>
 <style lang="scss" scoped>

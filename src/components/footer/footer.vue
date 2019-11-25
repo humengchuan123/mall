@@ -6,19 +6,13 @@
 
 <script>
 export default {
-  components:{},
-  props:{},
-  data(){
+  name: 'Footer',
+  data () {
     return {
     }
-  },
-  watch:{},
-  computed:{},
-  methods:{},
-  created(){},
-  mounted(){}
+  }
 }
 </script>
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .wrapper{}
 </style>
