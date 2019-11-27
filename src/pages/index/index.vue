@@ -14,5 +14,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.wrapper{}
+.wrapper{
+  height: 6rem;
+}
 </style>

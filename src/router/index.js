@@ -9,21 +9,28 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
+      name: 'default',
       path: '/',
-      name: 'mallHeader',
-      component: mallHeader
-    },
-    {
-      path: '/',
-      name: 'mallFooter',
-      component: mallFooter
-    },
-    {
-      path: '/index',
-      name: 'mallIndex',
-      component: mallIndex,
-      redirect: { name: 'mallIndex' },
-      children: []
+      components: {
+        header: mallHeader,
+        index: mallIndex,
+        footer: mallFooter
+      }
     }
+    // {
+    //   path: '/',
+    //   name: 'mallIndex',
+    //   component: mallIndex
+    // },
+    // {
+    //   path: '/',
+    //   name: 'mallHeader',
+    //   component: mallHeader
+    // },
+    // {
+    //   path: '/',
+    //   name: 'mallFooter',
+    //   component: mallFooter
+    // }
   ]
 })
