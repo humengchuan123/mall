@@ -31,7 +31,15 @@
       <div class="news-letters">
         <div class="letter-title">Newsletter</div>
         <div class="letter-area">
-          <!-- <input type="text" placeholder="Newsletter Signup"> -->
+          <input type="email" placeholder="Newsletter Signup">
+          <span class="iconfont icon-arrow">&#xe600;</span>
+          <div class="letter-icon-area">
+            <ul>
+              <li class="iconfont">&#xe60b;</li>
+              <li class="iconfont">&#xe6f9;</li>
+              <li class="iconfont">&#xe6fd;</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -223,6 +231,47 @@ export default {
           margin: auto;
           border-radius: 100%;
         }
+      }
+      .letter-area{
+        position: relative;
+        input{
+          font-size: 13px;
+          color: #888888;
+          float: left;
+          width: 100%;
+          border: none;
+          background: none;
+          padding-right: 30px;
+          line-height: 22px;
+          height: 40px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.28);
+        }
+        .icon-arrow{
+          color: #ffffff;
+          width: 1rem;
+          font-size: 22px;
+          text-align: right;
+          position: absolute;
+          top: 1.6rem;
+          right: -0.5rem;
+        }
+        .letter-icon-area{
+          margin-top: 1rem;
+          float: left;
+          .iconfont{
+            color: #888888;
+            font-size: 20px;
+            display: inline-block;
+            margin: 0px 12px 0px 0px;
+            cursor: pointer;
+          }
+          .iconfont:hover{
+            color: #ffffff;
+            // font-size: 30px;
+            transform: scale(1.4);
+          }
+        }
+
       }
     }
   }

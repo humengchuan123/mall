@@ -17,8 +17,11 @@
     <div class="icon-area">
       <span class="iconfont search">&#xe70a;</span>
       <span class="iconfont cart">&#xe6f1;</span>
-      <span class="iconfont menu">&#xe6ed;</span>
+      <span @click="hanldeUserMenu" class="iconfont menu">&#xe6ed;</span>
       <span class="num">{{ cartNum }}</span>
+    </div>
+    <div v-if="showUserInfo" class="user-wrap">
+
     </div>
   </div>
 </template>
@@ -29,16 +32,21 @@ export default {
   data () {
     return {
       menuList: [],
-      cartNum: '3'
+      cartNum: '3',
+      showUserInfo: false
     }
   },
   watch: {},
   computed: { },
   methods: {
     handleHome () {
-      // this.$router.push({
-      //   name: ""
-      // })
+      this.$router.push({
+        name: 'login'
+      })
+    },
+    hanldeUserMenu () {
+      console.log(123)
+      this.showUserInfo = !this.showUserInfo
     }
   },
   created () { },
@@ -109,6 +117,14 @@ export default {
         width: 0.36rem;
         border-radius: 50%;
       }
+    }
+    .user-wrap{
+      width: 5rem;
+      height: 5rem;
+      background: #06c;
+      position: absolute;
+      right: 0.4rem;
+      top: 2rem;
     }
   }
 </style>

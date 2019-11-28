@@ -1,20 +1,16 @@
 <template>
-  <div class="wrapper"></div>
+  <div class="wrapper">
+    login
+  </div>
 </template>
 
 <script>
 export default {
-  components:{},
-  props:{},
-  data(){
+  name: '',
+  data () {
     return {
     }
-  },
-  watch:{},
-  computed:{},
-  methods:{},
-  created(){},
-  mounted(){}
+  }
 }
 </script>
 <style lang="scss" scoped>
