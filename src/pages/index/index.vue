@@ -1,20 +1,24 @@
 <template>
   <div class="wrapper">
-    主页文件
+    <banner></banner>
   </div>
 </template>
 
 <script>
+import Banner from '../../components/banner/homeBanner'
 export default {
-  name: '',
+  name: 'Index',
   data () {
-    return {
-    }
+    return {}
+  },
+  components: {
+    Banner
   }
 }
 </script>
 <style lang="scss" scoped>
 .wrapper{
-  height: 6rem;
+  overflow: hidden;
+  width: 100%;
 }
 </style>
