@@ -125,6 +125,7 @@ export default {
       position: absolute;
       right: 0.4rem;
       top: 2rem;
+      z-index: 99;
     }
   }
 </style>
